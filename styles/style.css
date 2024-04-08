@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+h2 {
+    font-family: 'Comic Sans';
+}
+.ficha{
+    /* mismo tamaño; disposición en grilla; fondo; márgenes; bordes */
+    /* width, height; comportamiento de línea/bloque */
+    width: 400px;
+    overflow: hidden;
+    display: inline-block;
+    border: 2px solid gray;
+}
+img{
+    max-width: 360px;
+    height: 220px;
+}
+*{
+    text-align: center;
+}
+.imagenMascota{
+    height: 390px;
+    background-position: center;
+    background-size: contain;
+}
+#gatoMiguel{
+    background-image: url("https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg");
+}
+#gatoPepe{
+    background-image: url("https://nupec.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-08-a-las-13.59.48.png");
+}

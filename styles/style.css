@@ -50,6 +50,7 @@ img{
 }
 #gatoPepe{
     background-image: linear-gradient(to bottom, #ffffff00 0%, #000000 100%), url("https://nupec.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-08-a-las-13.59.48.png");
+    background-position:right;
 }
 #perroPatan {
     background-image: linear-gradient(to bottom, #ffffff00 0%, #000000 100%), url("https://definicion.de/wp-content/uploads/2013/03/perro-1.jpg");

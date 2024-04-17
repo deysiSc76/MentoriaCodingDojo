@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+       <!--
+        Obligatorios(--)
+        --Nombre Completo
+        --Direccion
+        --Telefono
+        --E-mail
+        --Tiene Mascotas
+        Tipo de Mascotas
+        Cantidad de Mascotas
+        Vacunas de Mascotas
+        Raza de Mascotas
+        Compromiso de castracion y manutencion
+        Espacio libre con seguridad
+        Compromiso de seguimiento
+        -->
+        <section>
+            <form>
+                <label for="fullName">Nombre Completo:</label><br>
+                <input type="text" id="fullName" name="fname"><br>
+
+                <label for="direccion">Direccion:</label><br>
+                <input type="text" id="direccion" name="lname"><br>
+
+                <label for="tel">Telefono:</label><br>
+                <input type="tel" id="tel" name="tel" pattern="\+595 9[0-9]{2}-[0-9]{6}"><br>
+                <!--La primera parte admiten 2 dígitos del 0 al 9, y la segunda parte admiten 6 dígitos del 0 al 9-->
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

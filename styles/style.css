@@ -1,9 +1,26 @@
 body {
     margin: 0;
 }
+#encabezado {
+    display: flex;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: space-around;
+    background-color: green;
+    height: 200px;
+}
+.logosContainer {
+    display: flex;
+    gap: 10px;
+}
+.logo {
+    height: 100px;
+}
+
 h2 {
     font-family: 'Comic Sans';
 }
+
 .ficha{
     /* mismo tamaño; disposición en grilla; fondo; márgenes; bordes */
     /* width, height; comportamiento de línea/bloque */

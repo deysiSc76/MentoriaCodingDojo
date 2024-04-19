@@ -9,12 +9,10 @@
 </head>
 
 <body>
-
-    <h1>Galería de animales en adopción</h1>
-    <!--
-    -Formulario de adopcion
+    <!-- Cosas por hacer
     -Hacer que cambie las imagenes de los animales con hover
     -->
+
 
     <!-- 
         1. style en línea 
@@ -23,170 +21,157 @@
     -->
 
     <!-- ¿cómo hacer más cosas con menos código :)))) -->
+    <div id="encabezado">
+        <div>
+            <h1>Galería de animales en adopción</h1>
+            <h2>Animales adoptados hoy: 
+                <span id="contadorAnimales">0</span>
+            </h2>
+        </div>
+        
+        <div class="logosContainer">
+            <img class="logo" src="./imagenes/logo.png" alt="Logo" onclick="ladrar()">
+            <img class="logo" src="./imagenes/logo.png" alt="Logo" onclick="ladrar()">
+            <img class="logo" src="./imagenes/logo.png" alt="Logo" onclick="ladrar()">
+            <img class="logo" src="./imagenes/logo.png" alt="Logo" onclick="ladrar()">
+        </div>
+    </div>
+
     <div id="grilla">
-
-        <div class="ficha">
-            <a href="https://www.google.com">
-                
-                <div class="imagenMascota" id="gatoMiguel">
-                    <div class="nombreMascota">Gato Miguel</div>
-                </div>
-            </a>
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="gatoMiguel">
+                <div class="nombreMascota">Gato Miguel</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="https://google.com">
-                <div  class="imagenMascota" id="gatoPepe">
-                    <div class="nombreMascota">Gato Pepe</div>
-                </div>
-            </a>
+
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="gatoPepe">
+                <div class="nombreMascota">Gato Pepe</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="">
-                <div class="imagenMascota" id="perroPatan">
-                    <div class="nombreMascota">Perro Patán</div>
-                </div>
-            </a>
-           <ul class="virtudes">
-                <li>Simpático</li>
-                <li>Amigable</li>
 
-            </ul>
-            <button class="botonAdoptar">Adoptar</button>
-        </div>
-        <div class="ficha">
-            <a href="">
-                <div class="imagenMascota" id="perroHuesos"> 
-                    <div class="nombreMascota">Perro Huesos</div>
-                </div>
-            </a>
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="perroPatan">
+                <div class="nombreMascota">Perro Patán</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="">
-                <div class="imagenMascota" id="perraAkira">
-                    <div class="nombreMascota">Perra Akira</div>
-                </div>
-                
-            </a>
+
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="perroHuesos">
+                <div class="nombreMascota">Perro Huesos</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="">
-                <div class="imagenMascota" id="perraLaika">
-                    <div class="nombreMascota">Perra Laika y Perro Pedrín</div>
-                </div>
-            
-               
-            </a>
+
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="perraAkira">
+                <div class="nombreMascota">Perra Akira</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="">
-                <div class="imagenMascota" id="lemurPluto">
-                   <div class="nombreMascota">Lemur Pluto</div>
-                </div>
-            </a>
+        
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="perraLaika">
+                <div class="nombreMascota">Perra Laika y Perro Pedrín</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="">
-                <div class="imagenMascota" id="ratonMarley">
-                    <div class="nombreMascota">Ratón Marley</div>
-                </div>
-            </a>
+
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="lemurPluto">
+                <div class="nombreMascota">Lemur Pluto</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="">
-                <div class="imagenMascota" id="ñanduPaco">
-                    <div class="nombreMascota">Ñandú Paco</div>
-                </div>
-            </a>
+
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="ratonMarley">
+                <div class="nombreMascota">Ratón Marley</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="">
-                <div class="imagenMascota" id="ratonPinky">
-                    <div class="nombreMascota">Ratón Pinky</div>
-                </div> 
-            </a>
+
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="ñanduPaco">
+                <div class="nombreMascota">Ñandú Paco</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="">
-                <div class="imagenMascota" id="hamsterNiebla">
-                    <div class="nombreMascota">Hamster Niebla Diabla</div>
-                </div>
-                
-            </a>
+
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="ratonPinky">
+                <div class="nombreMascota">Ratón Pinky</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
-
             </ul>
             <button class="botonAdoptar">Adoptar</button>
         </div>
-        <div class="ficha">
-            <a href="" >
-                <div class="imagenMascota" id="serpienteAnonima">
-                    <div class="nombreMascota">Serpiente Anónima</div>
-                </div>
-            </a>
+
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="hamsterNiebla">
+                <div class="nombreMascota">Hamster Niebla Diabla</div>
+            </div>
             <ul class="virtudes">
                 <li>Simpático</li>
                 <li>Amigable</li>
+            </ul>
+            <button class="botonAdoptar">Adoptar</button>
+        </div>
 
+        <div class="ficha" onclick="adoptado(this)">
+            <div class="imagenMascota" id="serpienteAnonima">
+                <div class="nombreMascota">Serpiente Anónima</div>
+            </div>
+            <ul class="virtudes">
+                <li>Simpático</li>
+                <li>Amigable</li>
             </ul>
             <button class="botonAdoptar">ADOPTAR</button>
         </div>
     </div>
+    <!-- Carpeta JS de nombre Script.js -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

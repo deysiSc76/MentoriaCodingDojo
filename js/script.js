@@ -12,10 +12,22 @@ function ladrar() {
 };
 
 // Al tocar una ficha, elimina la ficha y suma al contador.
-function adoptado(elemento) {
+function adoptar(elemento) {
     elemento.remove(); 
     //elemento.style.display = "none"; 
     let contadorHTML = document.querySelector("#contadorAnimales");
     contadorAdoptados++;
     contadorHTML.textContent = contadorAdoptados;
 }
+
+/*
+let logoImagen = document.querySelector(".logo");
+
+logoImagen.addEventListener("click", function (elemento) {
+    elemento.remove();
+    //elemento.style.display = "none"; 
+    contadorAdoptados++;
+    let contadorHTML = document.querySelector("#contadorAnimales");
+    contadorHTML.textContent = contadorAdoptados;
+})
+ */

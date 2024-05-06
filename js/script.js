@@ -93,4 +93,8 @@ function crearAnimal(unAnimal) {  //Falta imagen y adoptado
     <button class="botonAdoptar">Adoptar</button>
   `;
   document.querySelector("#grilla").appendChild(nuevaFicha);
+  document.querySelector(`#${nuevaFicha.id} .imagenMacota`)
+  let miImagen = document.querySelector(`#${nuevaFicha.id} .imagenMacota`)
 }
+
+/* background-image: linear-gradient(to bottom, #ffffff00 0%, #000000 100%), url("https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg");*/

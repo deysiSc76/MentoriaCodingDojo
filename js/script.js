@@ -78,12 +78,13 @@ let NieblaDiabla = new Animal(11, "Hamster", "Niebla Diabla", ["Simpático", "Am
 
 let Anónima = new Animal(12, "Serpiente", "Anónima", ["Simpática", "Amigable"], false, "https://d2r8r0qhs4bt8m.cloudfront.net/wp-content/uploads/2019/10/18163743/desktop-1425399420.jpg");
 
-function crearAnimal(unAnimal) {  //Falta imagen y adoptado
+function crearAnimal(unAnimal) {  
+  //
   let nuevaFicha = document.createElement("div");
   nuevaFicha.classList.add("ficha");
-  nuevaFicha.id = unAnimal.id;
+  nuevaFicha.id = "animal" + unAnimal.id;
   nuevaFicha.innerHTML = `
-    <div class="imagenMascota">
+    <div id="imagen${unAnimal.id}" class="imagenMascota">
       <div class="nombreMascota">${unAnimal.nombre}</div>
     </div>
     <ul class="virtudes">
@@ -93,8 +94,10 @@ function crearAnimal(unAnimal) {  //Falta imagen y adoptado
     <button class="botonAdoptar">Adoptar</button>
   `;
   document.querySelector("#grilla").appendChild(nuevaFicha);
-  document.querySelector(`#${nuevaFicha.id} .imagenMacota`)
-  let miImagen = document.querySelector(`#${nuevaFicha.id} .imagenMacota`)
+  let miImagen = document.querySelector(`#imagen${unAnimal.id}`);
+  miImagen.style= `background-image: linear-gradient(to bottom, #ffffff00 0%, #000000 100%), url(${unAnimal.imagen})`;
 }
-
-/* background-image: linear-gradient(to bottom, #ffffff00 0%, #000000 100%), url("https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg");*/
+//Resolver evento click
+//Resolver estado  adoptado cuando se hace click
+//Crear los animales
+//Armar una estructura de animales mas compacta

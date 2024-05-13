@@ -1,3 +1,8 @@
+//TO DO LIST:
+//Resolver estado  adoptado cuando se hace click
+//Pasar a Pokemones consumiendo API
+//Pasar a componentes de React
+
 //Clase Animal
 class Animal {
   constructor(id, tipo, nombre, virtudes, adoptado, imagen) {
@@ -134,10 +139,9 @@ let Anónima = new Animal(
 miListaDeAnimales.push(Anónima);
 /* Fin animales */
 
-//Resolver evento click
-//Resolver estado  adoptado cuando se hace click
-//Crear los animales
-//Armar una estructura de animales mas compacta
+
+
+
 
 window.onload = function () {
   // Variable Global
@@ -152,20 +156,16 @@ window.onload = function () {
 
   let coleccionPatitas = document.querySelectorAll(".logo");
 
-  for (
-    let patitaNumero = 0;
-    patitaNumero < coleccionPatitas.length;
-    patitaNumero++
-  ) {
-    const unaPatita = coleccionPatitas[patitaNumero];
-    if (patitaNumero % 2 === 0) {
+  coleccionPatitas.map((unaPatita,index)=>
+  {
+    if (index % 2 === 0) {
       //Si la patita es par
       unaPatita.addEventListener("click", () => saludar("Miau"));
     } else {
       //Si la patita es impar
       unaPatita.addEventListener("click", () => saludar("Guau"));
     }
-  } //Fin maullar ladrar
+  }) //Fin maullar ladrar
 
   // Función adoptar suma al contador y canmbia estado.
   function adoptar(elemento) {
@@ -199,8 +199,7 @@ window.onload = function () {
     miImagen.style = `background-image: linear-gradient(to bottom, #ffffff00 0%, #000000 100%), url(${unAnimal.imagen})`;
   }
 
+  
   //Crear animales y asocia el evento click adoptar
-  for (let i = 0; i < miListaDeAnimales.length; i++) {
-    crearAnimal(miListaDeAnimales[i]);
-  }
+  miListaDeAnimales.map( (animal) => {crearAnimal(animal)});
 };

@@ -1,4 +1,4 @@
-//TO DO LIST:
+//TODO LIST:
 //Resolver estado  adoptado cuando se hace click
 //Pasar a Pokemones consumiendo API
 //Pasar a componentes de React
@@ -14,7 +14,7 @@ class Animal {
     this.imagen = imagen;
   }
 }
-
+// #region  Animal
 /* Animales */
 let miListaDeAnimales = [];
 
@@ -138,7 +138,7 @@ let Anónima = new Animal(
 );
 miListaDeAnimales.push(Anónima);
 /* Fin animales */
-
+// #endregion
 
 
 
@@ -156,7 +156,7 @@ window.onload = function () {
 
   let coleccionPatitas = document.querySelectorAll(".logo");
 
-  coleccionPatitas.map((unaPatita,index)=>
+  [...coleccionPatitas].map((unaPatita,index)=>
   {
     if (index % 2 === 0) {
       //Si la patita es par
